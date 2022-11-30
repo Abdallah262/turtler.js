@@ -175,7 +175,7 @@ function drawCloud(x, y) {
 }
 
 /* beggining of pipe section */
-function drawPipe(0, 0) {
+function drawPipe(x, y) {
     goto(0, 0);
     forward(10);
     left(90);
@@ -198,3 +198,4 @@ function drawPipe(0, 0) {
     hideTurtle();
     pendown();
     /* End of pipe section */
+}
