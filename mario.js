@@ -160,7 +160,7 @@ function drawQuarterCircle(count, size, angle) {
     }
 }
 
-function drawCloud(x, y) {
+function drawCloud(distance) {
     goto(x, y);
     drawQuarterCircle(2, 0.5, 90);
     drawQuarterCircle(2, 0.5, 0);
