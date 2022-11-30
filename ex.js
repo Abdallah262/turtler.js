@@ -1,0 +1,7 @@
+right(45)
+forward(710)
+left(90.5)
+forward(360)
+right(1)
+forward(346)
+hideTurtle()
