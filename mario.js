@@ -116,3 +116,88 @@ function strafe(distance) {
 
 /* End of brick section */
 
+/* Beginning of question mark section. */
+
+function drawQuestionMark(x, y) {
+    goto(x, y);
+    drawQuarterCircle(3, 0.5, 0);
+    right(90);
+    goto(x, y);
+    right(90);
+    forward(10);
+    left(90);
+    drawQuarterCircle(3, 0.3, 0);
+    forward(10);
+    left(90);
+    forward(30);
+    left(90);
+    forward(10);
+    left(90)
+    forward(20);
+
+    right(180);
+    penup();
+    forward(35);
+
+    right(90);
+    forward(10);
+    pendown();
+
+    right(90);
+    drawQuarterCircle(4, 0.1, 0);
+    hideTurtle();
+}
+
+/* End of question mark section */
+function drawQuarterCircle(count, size, angle) {
+    for (var i = 0; i < count; i++) {
+        for (var n = 0; n < 90; n++) {
+            forward(size);
+            right(1);
+        }
+        left(angle);
+    }
+}
+function drawCloud(x, y) {
+    goto(x, y);
+    drawQuarterCircle(2, 0.5, 90);
+    drawQuarterCircle(2, 0.5, 0);
+    left(90);
+    drawQuarterCircle(2, 0.5, 90);
+    right(90);
+    drawQuarterCircle(1, 0.25, 90)
+    right(90);
+    forward(144);
+    drawQuarterCircle(1, 0.25, 90);
+    right(90);
+    goto(0,0)
+    drawQuarterCircle(2, 0.5, 90);
+}
+
+/* beginning of pipe section */
+
+function drawPipe(x,y) {
+goto(x,y);
+forward(10);
+left(90);
+forward(15);
+right(90);
+forward(15);
+right(90);
+forward(100);
+right(90);
+forward(15);
+right(90);
+forward(10);
+left(90);
+forward(10);
+forward(200);
+right(90);
+forward(75);
+right(90);
+forward(200);
+hideTurtle();
+pendown();
+}
+
+/* End of pipe section */
