@@ -172,11 +172,14 @@ function drawCloud(x, y) {
     forward(144);
     drawQuarterCircle(1, 0.25, 90);
     right(90);
+    hideTurtle();
 }
+
 
 /* beggining of pipe section */
 function drawPipe(distance) {
-    goto(x, y);
+   showTurtle();
+    goto(0, 0);
     forward(10);
     left(90);
     forward(15);
