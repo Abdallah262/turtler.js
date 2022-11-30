@@ -175,7 +175,7 @@ function drawCloud(distance) {
 }
 
 /* beggining of pipe section */
-function drawPipe(x, y) {
+function drawPipe(distance) {
     goto(x, y);
     forward(10);
     left(90);
