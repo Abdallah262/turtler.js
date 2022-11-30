@@ -149,6 +149,7 @@ function drawQuestionMark(x, y) {
 }
 
 /* End of question mark section */
+
 function drawQuarterCircle(count, size, angle) {
     for (var i = 0; i < count; i++) {
         for (var n = 0; n < 90; n++) {
@@ -158,6 +159,7 @@ function drawQuarterCircle(count, size, angle) {
         left(angle);
     }
 }
+
 function drawCloud(x, y) {
     goto(x, y);
     drawQuarterCircle(2, 0.5, 90);
@@ -170,34 +172,32 @@ function drawCloud(x, y) {
     forward(144);
     drawQuarterCircle(1, 0.25, 90);
     right(90);
-    goto(0,0)
-    drawQuarterCircle(2, 0.5, 90);
 }
 
-/* beginning of pipe section */
-
+/* beggining of pipe section */
 function drawPipe(x,y) {
-goto(x,y);
-forward(10);
-left(90);
-forward(15);
-right(90);
-forward(15);
-right(90);
-forward(100);
-right(90);
-forward(15);
-right(90);
-forward(10);
-left(90);
-forward(10);
-forward(200);
-right(90);
-forward(75);
-right(90);
-forward(200);
-hideTurtle();
-pendown();
-}
-
-/* End of pipe section */
+    pendown();
+    goto(0,0);
+    forward(10);
+    left(90);
+    forward(15);
+    right(90);
+    forward(15);
+    right(90);
+    forward(100);
+    right(90);
+    forward(15);
+    right(90);
+    forward(10);
+    left(90);
+    forward(10);
+    forward(200);
+    right(90);
+    forward(75);
+    right(90);
+    forward(200);
+    hideTurtle();
+    pendown();
+    
+    /* End of pipe section */
+    
